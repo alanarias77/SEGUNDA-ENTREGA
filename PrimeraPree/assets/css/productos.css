@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0%;
+    
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90px auto auto 60px;
+    grid-template-areas: "header header header header"
+                         "main main main main"
+                         "aside aside aside aside"
+                         "footer footer footer footer";
+    background-image: url(../img/rostrosFon.jpg);
+    background-repeat: no-repeat;           
+    background-position: center;       
+    background-size:cover;
+
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+
+.main{
+    margin-top: 30px;
+}
+.disponibles{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 30px;
+    color: aliceblue;
+}
+.disponibles :hover{
+    color: rgb(0, 0, 0);
+}
+.aside{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.aside img{
+    display: flex;
+    border: solid 3px black;
+    width: 450px;
+    height: 450px;
+    margin: 25px;
+    padding: 5px;
+}
+
+footer{
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.aside{
+    grid-area: aside;
+}
+.footer{
+    grid-area: footer;
+}
